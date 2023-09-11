@@ -11,6 +11,7 @@ class Display {
             dividir: '%',
             multiplicar: 'x',
             restar: '-', 
+            raiz: '√',
         }
     }
 
@@ -52,4 +53,6 @@ class Display {
         if( isNaN(valorActual)  || isNaN(valorAnterior) ) return
         this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
     }
+
+    
 }
